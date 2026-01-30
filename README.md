@@ -36,7 +36,10 @@ The design was verified in **ModelSim**. The waveform below shows the processor 
 > **Note:** See the `ALUResult` signal in the waveform for the sequence output.
 
 ![Simulation Waveform](simulation_result.png)
-![Uploading image.png…]()
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/2c824e1a-096f-4ffb-b046-5dbf4ab3fcee" />
+<img width="1914" height="1198" alt="image" src="https://github.com/user-attachments/assets/ea7b4bbc-4aa7-421e-8cd0-d625669340d6" />
+
+
 
 
 ## 🛠️ Tools Used
