@@ -1,0 +1,29 @@
+module imem (
+    input [31:0] a,      // The Address (PC) coming from the processor
+    output [31:0] rd     // The Instruction (Read Data) coming out
+);
+
+    // Create a memory array of 64 words (enough for small programs)
+    reg [31:0] RAM[63:0];
+
+    // INITIAL BLOCK: This is where we load our "Fake Program"
+    // We are manually putting Hex codes here because we don't have an Assembler yet.
+    initial begin
+        // Program:
+        // x1 = 10
+        // x2 = 20
+        // x3 = x1 + x2 (should be 30)
+        
+        RAM[0] = 32'h00A00093; // ADDI x1, x0, 10  (Addr 0)
+        RAM[1] = 32'h01400113; // ADDI x2, x0, 20  (Addr 4)
+        RAM[2] = 32'h002081B3; // ADD  x3, x1, x2  (Addr 8)
+        RAM[3] = 32'h00000000; // NOP (No Operation)
+    end
+
+    // READ LOGIC
+    // Note: RISC-V addresses increase by 4 (0, 4, 8, 12...)
+    // But our array index increases by 1 (0, 1, 2, 3...)
+    // So we cut off the last 2 bits (divide by 4) to match them.
+    assign rd = RAM[a[31:2]]; 
+
+endmodule
