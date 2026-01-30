@@ -58,6 +58,8 @@ The design was verified in **ModelSim**. The waveform below shows the processor 
 5.  Run the simulation on `tb_riscv_top.v`.
 6.  Add `ALUResult` to the wave window and set Radix to **Decimal** to view the output sequence.
 
+#project link : https://github.com/nashokkumarreddy/RISCV-32bit-Processor-Verilog.git
+
 ## 👤 Author
 **N ASHOK KUMAR REDDY**
 *Electronics and Communication Engineering (ECE)*
