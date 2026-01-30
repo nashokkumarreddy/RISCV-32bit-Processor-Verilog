@@ -50,7 +50,7 @@ The design was verified in **ModelSim**. The waveform below shows the processor 
 ## ⚙️ How to Run
 1.  Clone this repository:
     ```bash
-    git clone [https://github.com/your-username/RISCV-32bit-Processor-Verilog.git](https://github.com/your-username/RISCV-32bit-Processor-Verilog.git)
+    git clone [https://github.com/nashokkumarreddy/RISCV-32bit-Processor-Verilog.git](https://github.com/your-username/RISCV-32bit-Processor-Verilog.git)
     ```
 2.  Open **ModelSim** and create a new project.
 3.  Add all `.v` files from the repository to the project.
